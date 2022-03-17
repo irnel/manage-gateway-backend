@@ -48,192 +48,192 @@ namespace ManageGateway.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            UID = "03a40e3a-be03-4f28-9b6c-cf8e0f4a92e9",
-                            CreatedDate = new DateTime(2012, 3, 17, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7279),
+                            UID = "db52ad2c-a69c-4674-9523-ccb274b9c04b",
+                            CreatedDate = new DateTime(2012, 3, 17, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9897),
                             GatewaySerialNumber = "DQzrzFZZ",
                             Status = 1,
                             Vendor = "IBM"
                         },
                         new
                         {
-                            UID = "a991adf0-c8de-4434-bbcf-0bcf850a1a98",
-                            CreatedDate = new DateTime(2001, 10, 17, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7333),
+                            UID = "eef20c9d-8bb6-489f-9e2d-35ca002299bf",
+                            CreatedDate = new DateTime(2001, 10, 17, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9936),
                             GatewaySerialNumber = "DQzrzFZZ",
                             Status = 1,
                             Vendor = "SAMSUNG"
                         },
                         new
                         {
-                            UID = "c4f14cf8-009c-40e2-b836-dfb913dba481",
-                            CreatedDate = new DateTime(2006, 9, 17, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7340),
+                            UID = "79ef3d8a-96bc-4234-8d88-56e6892f84f2",
+                            CreatedDate = new DateTime(2006, 9, 17, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9943),
                             GatewaySerialNumber = "DQzrzFZZ",
                             Status = 0,
                             Vendor = "APPLE"
                         },
                         new
                         {
-                            UID = "2cd05870-18d2-40cb-8f6c-9e15e597ca6a",
-                            CreatedDate = new DateTime(2001, 12, 17, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7346),
+                            UID = "99fb384a-a236-4cb4-8af3-0b5c40dfe88b",
+                            CreatedDate = new DateTime(2001, 12, 17, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9950),
                             GatewaySerialNumber = "BGVCDTZA",
                             Status = 1,
                             Vendor = "MICROSOFT"
                         },
                         new
                         {
-                            UID = "76f928f5-3d01-4ae6-853e-c7b37eba70dc",
-                            CreatedDate = new DateTime(2010, 1, 17, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7351),
+                            UID = "18223fd6-a17f-4cf0-8ed7-a97db9016c78",
+                            CreatedDate = new DateTime(2010, 1, 17, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9955),
                             GatewaySerialNumber = "BGVCDTZA",
                             Status = 1,
                             Vendor = "XBOX"
                         },
                         new
                         {
-                            UID = "55012c37-8558-429b-97ec-b7d548ba9360",
-                            CreatedDate = new DateTime(2001, 10, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7357),
+                            UID = "2610f42c-e3d7-455f-968d-06bd0f7ccf53",
+                            CreatedDate = new DateTime(2001, 10, 27, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9974),
                             GatewaySerialNumber = "BGVCDTZA",
                             Status = 0,
                             Vendor = "PLAY STATION"
                         },
                         new
                         {
-                            UID = "e71cbf4b-e654-4ddf-8ab7-f8e0a0048a91",
-                            CreatedDate = new DateTime(1996, 7, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7365),
+                            UID = "b1c1c0c0-cd1f-49f9-b2fc-6d4515536230",
+                            CreatedDate = new DateTime(1996, 7, 27, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9984),
                             GatewaySerialNumber = "BGVCDTZA",
                             Status = 1,
                             Vendor = "LENOVO"
                         },
                         new
                         {
-                            UID = "ef7cd65a-b263-4496-ace0-5fcf9f1fc54a",
-                            CreatedDate = new DateTime(2001, 10, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7371),
+                            UID = "3c8547bf-6045-4c6e-aa20-3b8f0370513c",
+                            CreatedDate = new DateTime(2001, 10, 27, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9989),
                             GatewaySerialNumber = "BGVCDTZA",
                             Status = 1,
                             Vendor = "PANASONIC"
                         },
                         new
                         {
-                            UID = "b3469b25-2015-48dc-a357-e52396fa6bf0",
-                            CreatedDate = new DateTime(1998, 10, 18, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7377),
+                            UID = "281d9fbd-a156-4baa-a9a8-0ff2ace67841",
+                            CreatedDate = new DateTime(1998, 10, 18, 11, 31, 13, 519, DateTimeKind.Local).AddTicks(9995),
                             GatewaySerialNumber = "5jTocfWo",
                             Status = 0,
                             Vendor = "APPLE TV"
                         },
                         new
                         {
-                            UID = "51b9386e-8d28-4d98-a1ef-f3fc536cd172",
-                            CreatedDate = new DateTime(2019, 7, 18, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7386),
+                            UID = "95537899-7235-4d85-83fe-fe75aa70400d",
+                            CreatedDate = new DateTime(2019, 7, 18, 11, 31, 13, 520, DateTimeKind.Local),
                             GatewaySerialNumber = "5jTocfWo",
                             Status = 1,
                             Vendor = "APPLE WATCH"
                         },
                         new
                         {
-                            UID = "f7276d90-21b1-4395-844c-600b120ee17b",
-                            CreatedDate = new DateTime(1996, 10, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7392),
+                            UID = "1801348e-82d7-4889-877d-a618dfe7fef5",
+                            CreatedDate = new DateTime(1996, 10, 27, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(6),
                             GatewaySerialNumber = "5v3VqScu",
                             Status = 1,
                             Vendor = "HP"
                         },
                         new
                         {
-                            UID = "b1284ada-7fe9-4984-902b-363cd3ea9848",
-                            CreatedDate = new DateTime(2002, 2, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7398),
+                            UID = "66377769-f0ec-46f4-bac1-002b94adc5ce",
+                            CreatedDate = new DateTime(2002, 2, 27, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(12),
                             GatewaySerialNumber = "5v3VqScu",
                             Status = 0,
                             Vendor = "PRINTER"
                         },
                         new
                         {
-                            UID = "152c1302-6ebb-40b2-881d-ff1454a15612",
-                            CreatedDate = new DateTime(2011, 10, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7404),
+                            UID = "815ae677-dd2b-4940-8384-fbab7a5e7e76",
+                            CreatedDate = new DateTime(2011, 10, 27, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(18),
                             GatewaySerialNumber = "5v3VqScu",
                             Status = 1,
                             Vendor = "HDD"
                         },
                         new
                         {
-                            UID = "cd0598c0-0bf0-4a22-94e1-011895510f03",
-                            CreatedDate = new DateTime(2001, 7, 2, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7410),
+                            UID = "93567541-3e3c-4fb0-96f6-a7e709d68f0a",
+                            CreatedDate = new DateTime(2001, 7, 2, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(28),
                             GatewaySerialNumber = "5v3VqScu",
                             Status = 1,
                             Vendor = "SSD"
                         },
                         new
                         {
-                            UID = "15a46dbc-e86a-4511-8c78-59608b2333da",
-                            CreatedDate = new DateTime(2011, 1, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7416),
+                            UID = "68655a0b-a355-490a-aaf1-49ec332c7c6b",
+                            CreatedDate = new DateTime(2011, 1, 27, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(33),
                             GatewaySerialNumber = "5v3VqScu",
                             Status = 0,
                             Vendor = "THOSIBA"
                         },
                         new
                         {
-                            UID = "a7a82e27-3fce-4d41-a9f3-16e72d71648a",
-                            CreatedDate = new DateTime(2002, 8, 27, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7422),
+                            UID = "b041246c-66c5-4758-ac1d-69677c5b140b",
+                            CreatedDate = new DateTime(2002, 8, 27, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(48),
                             GatewaySerialNumber = "5v3VqScu",
                             Status = 1,
                             Vendor = "ACER"
                         },
                         new
                         {
-                            UID = "2bc84467-eace-42b5-b2c8-689c934f77df",
-                            CreatedDate = new DateTime(2001, 5, 16, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7427),
+                            UID = "cdfb4d07-219d-4742-8677-2d2d4dd85ebf",
+                            CreatedDate = new DateTime(2001, 5, 16, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(54),
                             GatewaySerialNumber = "5v3VqScu",
                             Status = 1,
                             Vendor = "INTEL"
                         },
                         new
                         {
-                            UID = "38a56917-481b-4802-88ed-42c7f296f0af",
-                            CreatedDate = new DateTime(2001, 5, 16, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7436),
+                            UID = "5f1965cf-b7d2-4fb3-8965-91c31d7ee8c4",
+                            CreatedDate = new DateTime(2001, 5, 16, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(60),
                             GatewaySerialNumber = "igDFAY6L",
                             Status = 0,
                             Vendor = "AMD"
                         },
                         new
                         {
-                            UID = "bd26d119-eea1-44c8-b9f0-47c2c0656ac3",
-                            CreatedDate = new DateTime(2022, 3, 17, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7441),
+                            UID = "6d37d556-06f7-4b96-bb8e-cca16e940cf6",
+                            CreatedDate = new DateTime(2022, 3, 17, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(65),
                             GatewaySerialNumber = "igDFAY6L",
                             Status = 1,
                             Vendor = "ANDROID"
                         },
                         new
                         {
-                            UID = "62a5f3cc-3201-4dc5-965a-4b6112779bd2",
-                            CreatedDate = new DateTime(2022, 3, 17, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7446),
+                            UID = "9d92e86e-a14b-47ea-8013-9953cc6a4b6a",
+                            CreatedDate = new DateTime(2022, 3, 17, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(70),
                             GatewaySerialNumber = "igDFAY6L",
                             Status = 1,
                             Vendor = "IPAD"
                         },
                         new
                         {
-                            UID = "7955fb66-de2f-4bae-8556-09954820afb3",
-                            CreatedDate = new DateTime(2001, 8, 18, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7451),
+                            UID = "8f97b005-b9eb-478f-b585-14966dc40cf2",
+                            CreatedDate = new DateTime(2001, 8, 18, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(74),
                             GatewaySerialNumber = "igDFAY6L",
                             Status = 0,
                             Vendor = "IPHONE 13"
                         },
                         new
                         {
-                            UID = "1aa04704-59d7-4da2-b8b6-f91b5950512b",
-                            CreatedDate = new DateTime(2014, 5, 16, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7457),
+                            UID = "99d06cc3-a7af-4fd8-a43c-f306e147bc88",
+                            CreatedDate = new DateTime(2014, 5, 16, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(82),
                             GatewaySerialNumber = "igDFAY6L",
                             Status = 1,
                             Vendor = "IPHONE XS"
                         },
                         new
                         {
-                            UID = "98aaee50-e016-4238-8a98-b97ce10cdbb5",
-                            CreatedDate = new DateTime(2012, 5, 16, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7462),
+                            UID = "6cc202db-2539-4efd-97f1-dc18df4db13d",
+                            CreatedDate = new DateTime(2012, 5, 16, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(88),
                             GatewaySerialNumber = "igDFAY6L",
                             Status = 1,
                             Vendor = "SURFACE PRO"
                         },
                         new
                         {
-                            UID = "cd272b6f-a33d-46f5-b298-c1a883a9ed47",
-                            CreatedDate = new DateTime(2012, 5, 16, 2, 3, 39, 890, DateTimeKind.Local).AddTicks(7468),
+                            UID = "3cc16475-42b7-44d8-9f36-3685bceefb13",
+                            CreatedDate = new DateTime(2012, 5, 16, 11, 31, 13, 520, DateTimeKind.Local).AddTicks(94),
                             GatewaySerialNumber = "igDFAY6L",
                             Status = 0,
                             Vendor = "IMAC"
