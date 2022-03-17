@@ -17,8 +17,8 @@ namespace ManageGateway.Tests.Controllers
 {
     public class DeviceTestController
     {
-        Mock<IDeviceService> _mockService;
-        DeviceController _controller;
+        readonly Mock<IDeviceService> _mockService;
+        readonly DeviceController _controller;
         readonly IMapper _mapper;
 
         public DeviceTestController()

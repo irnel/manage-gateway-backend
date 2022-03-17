@@ -31,7 +31,7 @@ namespace ManageGateway.Persistence.Repositories.Base
             await _context.Set<T>().AddAsync(entity);
             await _context.SaveChangesAsync();
 
-            BackgroundJob.Enqueue(() => RefreshCache());
+            //BackgroundJob.Enqueue(() => RefreshCache(cacheKey));
         }
 
         public async Task DeleteAsync(T entity)
@@ -39,12 +39,21 @@ namespace ManageGateway.Persistence.Repositories.Base
             _context.Set<T>().Remove(entity);
             await _context.SaveChangesAsync();
 
-            BackgroundJob.Enqueue(() => RefreshCache());
+            //BackgroundJob.Enqueue(() => RefreshCache(cacheKey));
         }
 
         public async Task<IReadOnlyList<T>> GetAllAsync()
         {
-            return await _context.Set<T>().ToListAsync();    
+            //if (!_cacheService(cacheTech).TryGet(cacheKey, out IReadOnlyList<T> cachedList))
+            //{
+            //    cachedList = await _context.Set<T>().ToListAsync();
+            //    CacheService(GetCacheTech).Set(cacheKey, cachedList);
+
+            //    BackgroundJob.Enqueue(() => RefreshCache(cacheKey));
+            //}
+
+            //return cachedList;
+            return await _context.Set<T>().ToListAsync();
         }
 
         public async Task<T> GetByIdAsync(string id)
@@ -52,11 +61,11 @@ namespace ManageGateway.Persistence.Repositories.Base
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public async Task RefreshCache()
+        public async Task RefreshCache(string key)
         {
-            _cacheService(cacheTech).Remove(cacheKey);
+            _cacheService(cacheTech).Remove(key);
             var cachedList = await _context.Set<T>().ToListAsync();
-            _cacheService(cacheTech).Set(cacheKey, cachedList);
+            _cacheService(cacheTech).Set(key, cachedList);
         }
     }
 }

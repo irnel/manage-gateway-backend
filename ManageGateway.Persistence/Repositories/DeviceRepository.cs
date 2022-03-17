@@ -16,20 +16,5 @@ namespace ManageGateway.Persistence.Repositories
             : base(context, cacheService)
         {
         }
-
-        public async Task<IReadOnlyList<Device>> GetAllWithIncludeAsync()
-        {
-            if (!CacheService(GetCacheTech).TryGet(CacheKey, out IReadOnlyList<Device> cachedList))
-            {
-                cachedList = await Context.Devices
-                    .Include(d => d.Gateway)
-                    .ToListAsync();
-
-                CacheService(GetCacheTech).Set(CacheKey, cachedList);
-                BackgroundJob.Enqueue(() => RefreshCache());
-            }
-
-            return cachedList;
-        }
     }
 }

@@ -29,15 +29,6 @@ namespace ManageGateway.Server.Controllers
             return Ok(mappedDevices);
         }
 
-        [HttpGet(), Route("GetAllWithInclude")]
-        public async Task<ActionResult<IEnumerable<DeviceWithGateway>>> GetAllWithIncludeAsync()
-        {
-            var devices = await _service.GetAllWithIncludeAsync();
-            var mappedDevices = _mapper.Map<List<DeviceWithGateway>>(devices);
-
-            return Ok(mappedDevices);
-        }
-
         [HttpGet("{uid}")]
         public async Task<ActionResult<DeviceDTO>> GetByIdAsync(string uid)
         {

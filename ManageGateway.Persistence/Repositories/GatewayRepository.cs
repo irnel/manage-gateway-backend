@@ -19,17 +19,21 @@ namespace ManageGateway.Persistence.Repositories
 
         public async Task<IReadOnlyList<Gateway>> GetAllWithIncludeAsync()
         {
-            if (!CacheService(GetCacheTech).TryGet(CacheKey, out IReadOnlyList<Gateway> cachedList))
-            {
-                cachedList = await Context.Gateways
-                    .Include(g => g.Devices)
-                    .ToListAsync();
+            //string gatewayCacheKey = "GatewayCacheKey";
 
-                CacheService(GetCacheTech).Set(CacheKey, cachedList);
-                BackgroundJob.Enqueue(() => RefreshCache());
-            }
+            //if (!CacheService(GetCacheTech).TryGet(gatewayCacheKey, out IReadOnlyList<Gateway> cachedList))
+            //{
+            //    cachedList = await Context.Gateways
+            //        .Include(g => g.Devices)
+            //        .ToListAsync();
 
-            return cachedList;
+            //    CacheService(GetCacheTech).Set(gatewayCacheKey, cachedList);
+            //    BackgroundJob.Enqueue(() => RefreshCache(gatewayCacheKey));
+            //}
+
+            //return cachedList;
+            
+            return await Context.Gateways.Include(g => g.Devices).ToListAsync();
         }
 
         public async Task<Gateway> GetByIdWithIncludeAsync(string serial)

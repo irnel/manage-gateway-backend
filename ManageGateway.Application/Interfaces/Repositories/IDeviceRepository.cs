@@ -5,6 +5,6 @@ namespace ManageGateway.Application.Interfaces.Repositories
 {
     public interface IDeviceRepository : IBaseRepository<Device>
     {
-        Task<IReadOnlyList<Device>> GetAllWithIncludeAsync();
+
     }
 }

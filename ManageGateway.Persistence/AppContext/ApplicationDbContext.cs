@@ -14,9 +14,9 @@ namespace ManageGateway.Persistence.AppContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Device>()
-                .HasOne(g => g.Gateway)
-                .WithMany(d => d.Devices)
+            modelBuilder.Entity<Gateway>()
+                .HasMany(d => d.Devices)
+                .WithOne()
                 .HasForeignKey(d => d.GatewaySerialNumber);
 
             modelBuilder.Entity<Device>()

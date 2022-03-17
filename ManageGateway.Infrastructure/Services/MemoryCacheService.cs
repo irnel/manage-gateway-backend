@@ -9,7 +9,7 @@ namespace ManageGateway.Infrastructure.Services
     {
         private readonly IMemoryCache _memoryCache;
         private readonly CacheConfiguration _cacheConfig;
-        private MemoryCacheEntryOptions _cacheOptions;
+        private readonly MemoryCacheEntryOptions _cacheOptions;
 
         public MemoryCacheService(IMemoryCache memoryCache, IOptions<CacheConfiguration> cacheConfig)
         {
@@ -41,7 +41,7 @@ namespace ManageGateway.Infrastructure.Services
         {
             _memoryCache.TryGetValue(cacheKey, out value);
 
-            return (value == null) ? false : true;
+            return value != null;
         }
     }
 }

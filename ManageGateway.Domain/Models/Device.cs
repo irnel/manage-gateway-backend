@@ -11,8 +11,6 @@ namespace ManageGateway.Domain.Models
         public DateTime CreatedDate { get; set; }
         public DeviceStatus Status { get; set; }
 
-        public virtual Gateway Gateway { get; set; }
-
         public string GatewaySerialNumber { get; set; }
     }
 }

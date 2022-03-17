@@ -29,10 +29,5 @@ namespace ManageGateway.Infrastructure.Services
         {
             await _repo.DeleteAsync(device);
         }
-
-        public Task<IReadOnlyList<Device>> GetAllWithIncludeAsync()
-        {
-            return _repo.GetAllWithIncludeAsync();
-        }
     }
 }

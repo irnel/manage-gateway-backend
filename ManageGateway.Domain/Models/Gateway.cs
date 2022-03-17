@@ -15,6 +15,6 @@ namespace ManageGateway.Domain.Models
         public string Name { get; set; }
         public string Address { get; set; }
 
-        public virtual ICollection<Device> Devices { get; set;}
+        public List<Device> Devices { get; set;}
     }
 }

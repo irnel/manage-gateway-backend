@@ -16,8 +16,8 @@ namespace ManageGateway.Tests.Controllers
 {
     public class GatewayTestController
     {
-        Mock<IGatewayService> _mockService;
-        GatewayController _controller;
+        readonly Mock<IGatewayService> _mockService;
+        readonly GatewayController _controller;
         readonly IMapper _mapper;
 
         public GatewayTestController()
@@ -108,7 +108,6 @@ namespace ManageGateway.Tests.Controllers
                         CreatedDate = DateTime.Now,
                         Status = DeviceStatus.Online,
                         GatewaySerialNumber = "DQzrzFZZQ9",
-                        Gateway = null
                     },
                     new Device
                     {
@@ -117,7 +116,6 @@ namespace ManageGateway.Tests.Controllers
                         CreatedDate = DateTime.Now,
                         Status = DeviceStatus.Online,
                         GatewaySerialNumber = "DQzrzFZZQ9",
-                        Gateway = null
                     }
                 }
             };
