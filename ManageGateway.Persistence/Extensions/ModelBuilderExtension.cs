@@ -1,6 +1,7 @@
 ﻿using ManageGateway.Domain.Enums;
 using ManageGateway.Domain.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 
 namespace ManageGateway.Persistence.Extensions
 {
@@ -47,7 +48,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "DQzrzFZZ",
                     Vendor = "IBM",
-                    CreatedDate = DateTime.Parse("7/24/2020"),
+                    CreatedDate = DateTime.Now.AddYears(-10),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -55,7 +56,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "DQzrzFZZ",
                     Vendor = "SAMSUNG",
-                    CreatedDate = DateTime.Parse("12/02/2008"),
+                    CreatedDate = DateTime.Now.AddYears(-20).AddMonths(-5),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -63,7 +64,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "DQzrzFZZ",
                     Vendor = "APPLE",
-                    CreatedDate = DateTime.Parse("01/20/2021"),
+                    CreatedDate = DateTime.Now.AddYears(-15).AddMonths(-6),
                     Status = DeviceStatus.Offline
                 },
                 new Device
@@ -71,7 +72,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "BGVCDTZA",
                     Vendor = "MICROSOFT",
-                    CreatedDate = DateTime.Parse("7/24/2020"),
+                    CreatedDate = DateTime.Now.AddYears(-20).AddMonths(-3),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -79,7 +80,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "BGVCDTZA",
                     Vendor = "XBOX",
-                    CreatedDate = DateTime.Parse("12/02/2008"),
+                    CreatedDate = DateTime.Now.AddYears(-12).AddMonths(-2),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -87,7 +88,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "BGVCDTZA",
                     Vendor = "PLAY STATION",
-                    CreatedDate = DateTime.Parse("11/21/2018"),
+                    CreatedDate = DateTime.Now.AddYears(-20).AddMonths(-5).AddDays(10),
                     Status = DeviceStatus.Offline
                 },
                 new Device
@@ -95,7 +96,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "BGVCDTZA",
                     Vendor = "LENOVO",
-                    CreatedDate = DateTime.Parse("7/24/2009"),
+                    CreatedDate = DateTime.Now.AddYears(-25).AddMonths(-8).AddDays(10),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -103,7 +104,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "BGVCDTZA",
                     Vendor = "PANASONIC",
-                    CreatedDate = DateTime.Parse("10/02/2018"),
+                    CreatedDate = DateTime.Now.AddYears(-20).AddMonths(-5).AddDays(10),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -111,7 +112,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5jTocfWo",
                     Vendor = "APPLE TV",
-                    CreatedDate = DateTime.Parse("01/20/2021"),
+                    CreatedDate = DateTime.Now.AddYears(-23).AddMonths(-5).AddDays(1),
                     Status = DeviceStatus.Offline
                 },
                 new Device
@@ -119,7 +120,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5jTocfWo",
                     Vendor = "APPLE WATCH",
-                    CreatedDate = DateTime.Parse("7/24/2020"),
+                    CreatedDate = DateTime.Now.AddYears(-2).AddMonths(-8).AddDays(1),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -127,7 +128,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5v3VqScu",
                     Vendor = "HP",
-                    CreatedDate = DateTime.Parse("12/02/2008"),
+                    CreatedDate = DateTime.Now.AddYears(-25).AddMonths(-5).AddDays(10),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -135,7 +136,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5v3VqScu",
                     Vendor = "PRINTER",
-                    CreatedDate = DateTime.Parse("01/20/2021"),
+                    CreatedDate = DateTime.Now.AddYears(-20).AddMonths(-1).AddDays(10),
                     Status = DeviceStatus.Offline
                 },
                 new Device
@@ -143,7 +144,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5v3VqScu",
                     Vendor = "HDD",
-                    CreatedDate = DateTime.Parse("7/24/2020"),
+                    CreatedDate = DateTime.Now.AddYears(-10).AddMonths(-5).AddDays(10),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -151,7 +152,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5v3VqScu",
                     Vendor = "SSD",
-                    CreatedDate = DateTime.Parse("12/02/2008"),
+                    CreatedDate = DateTime.Now.AddYears(-20).AddMonths(-9).AddDays(15),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -159,7 +160,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5v3VqScu",
                     Vendor = "THOSIBA",
-                    CreatedDate = DateTime.Parse("01/20/2021"),
+                    CreatedDate = DateTime.Now.AddYears(-11).AddMonths(-2).AddDays(10),
                     Status = DeviceStatus.Offline
                 },
                 new Device
@@ -167,7 +168,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5v3VqScu",
                     Vendor = "ACER",
-                    CreatedDate = DateTime.Parse("7/24/2020"),
+                    CreatedDate = DateTime.Now.AddYears(-20).AddMonths(5).AddDays(10),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -175,7 +176,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "5v3VqScu",
                     Vendor = "INTEL",
-                    CreatedDate = DateTime.Parse("12/02/2008"),
+                    CreatedDate = DateTime.Now.AddYears(-21).AddMonths(2).AddDays(-1),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -183,7 +184,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "igDFAY6L",
                     Vendor = "AMD",
-                    CreatedDate = DateTime.Parse("01/20/2021"),
+                    CreatedDate = DateTime.Now.AddYears(-21).AddMonths(2).AddDays(-1),
                     Status = DeviceStatus.Offline
                 },
                 new Device
@@ -191,7 +192,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "igDFAY6L",
                     Vendor = "ANDROID",
-                    CreatedDate = DateTime.Parse("7/24/2020"),
+                    CreatedDate = DateTime.Now,
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -199,7 +200,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "igDFAY6L",
                     Vendor = "IPAD",
-                    CreatedDate = DateTime.Parse("12/02/2008"),
+                    CreatedDate = DateTime.Now,
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -207,7 +208,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "igDFAY6L",
                     Vendor = "IPHONE 13",
-                    CreatedDate = DateTime.Parse("01/20/2021"),
+                    CreatedDate = DateTime.Now.AddYears(-21).AddMonths(5).AddDays(1),
                     Status = DeviceStatus.Offline
                 },
                 new Device
@@ -215,7 +216,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "igDFAY6L",
                     Vendor = "IPHONE XS",
-                    CreatedDate = DateTime.Parse("7/24/2020"),
+                    CreatedDate = DateTime.Now.AddYears(-8).AddMonths(2).AddDays(-1),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -223,7 +224,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "igDFAY6L",
                     Vendor = "SURFACE PRO",
-                    CreatedDate = DateTime.Parse("12/22/2018"),
+                    CreatedDate = DateTime.Now.AddYears(-10).AddMonths(2).AddDays(-1),
                     Status = DeviceStatus.Online
                 },
                 new Device
@@ -231,7 +232,7 @@ namespace ManageGateway.Persistence.Extensions
                     UID = Guid.NewGuid().ToString(),
                     GatewaySerialNumber = "igDFAY6L",
                     Vendor = "IMAC",
-                    CreatedDate = DateTime.Parse("01/27/2021"),
+                    CreatedDate = DateTime.Now.AddYears(-10).AddMonths(2).AddDays(-1),
                     Status = DeviceStatus.Offline
                 }
             );
